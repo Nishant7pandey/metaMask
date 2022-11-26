@@ -22,8 +22,11 @@ const WalletCard = () => {
             // console.log(account)
             // const contractAddress = "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
 
-          }
-          setLoading(true);
+            setLoading(true);
+        }
+        else{
+            alert("please install metamask")
+        }
         
     }
     const getUserBalance =(addres)=>{
