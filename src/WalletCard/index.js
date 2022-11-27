@@ -9,7 +9,6 @@ import NFTScontainers from "../NFTScontainers";
 
 const WalletCard = () => {
     const[address,setAddress] = useState(null)
-    const[nft,setNFT]= useState([]);
     const[balance,setBalance] =useState(0);
     const[loading,setLoading] =useState(false);
     const connectWallet=async()=>{
@@ -47,7 +46,7 @@ const WalletCard = () => {
             {loading && (<div className='details'>
             <strong>
             Balance: {balance}
-                </strong>
+            </strong>
             <NFTScontainers address={address}/>
 
             </div>)}
